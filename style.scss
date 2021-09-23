@@ -1,0 +1,358 @@
+$sky-blue: #3ebfff;
+$light-blue: #bceaf3;
+$white: #ffffff;
+$yellow: #dbb921;
+$light-pink: #f58ae3;
+$light-grey: #645e57;
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    max-width: 1440px;
+    margin:0 auto;
+    background-color: #3ebfff;
+}
+
+header{
+    background-image: url(Resources/photos/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 800px;
+    padding: 2em;
+    position:relative;
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Barlow', sans-serif;
+    }
+    nav{
+        position:absolute;
+        right:2em;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            list-style: none;
+
+            li{
+                width: 120px;
+                margin: 10px;
+                a{
+            
+                    text-decoration: none;
+                    color:$white;
+ 
+                }
+                a:hover{
+                    display: block;
+                    border: 1px transparent #35bdd8;
+                    padding: 3px;
+                    background:transparent;
+                    border-radius: 2px;
+                    font-weight: bold;
+                    justify-content: center;
+                    text-align: center;
+                    box-shadow: 0px 0px 15px 3px rgba(58, 64, 68, 0.45);
+                        }
+                 }
+            }
+        }
+    h1{
+        font-family: 'Fraunces', serif;
+        font-size: 3.5em;
+        text-align: center;
+        padding: 2rem;
+        letter-spacing: 10px;
+        position:relative;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $white;
+        }   
+        .down-arrow{
+            /*i can't position the downarrow icon to the center*/
+            background-image: url(Resources/icons/icon-arrow-down.svg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            position: relative;
+            width:100px;
+            height:150px;
+            color: $white;
+            margin: 0px auto;
+
+        }  
+}     
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0px 10px;
+    position: relative;
+    
+
+    .content-transform{
+        // display: inline-flex;
+        // flex-direction: column;
+        align-content: justify;
+        justify-content: center;
+        padding:0 20%;
+        background-color: $white;
+        height:40vw;
+     h2{
+         align-content: center;
+         padding-top: 90px;
+     }
+
+        p{
+            /*should be revised*/
+            // color: $light-grey;
+            // margin-bottom:3em;
+            line-height: 1.5;
+            // justify-content: center;
+            // align-content: center;
+            // text-align: center;
+            padding: 30px;
+
+            color: $light-grey;
+            margin-bottom:3em;
+            line-height: 1.5;
+            justify-content: center;
+        }
+      a{
+          text-decoration: none;
+          color:black;
+          text-transform: uppercase;
+        
+      }
+      mark{
+          background-color: $yellow;
+          background-size: 10%;
+      
+      }
+    }
+    .side-img-egg{
+        background: $yellow url(Resources/photos/image-transform.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .side-img-pink{
+        background: $yellow url(Resources/photos/image-stand-out.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        height:40vw;
+
+    }
+    .content-standout{
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        padding:0 20%;
+        background-color: $white;
+        height:40vw;
+
+
+        p{
+            /*should be revised*/
+            color: $light-grey;
+            margin-bottom:3em;
+            line-height: 1.5;
+            justify-content: center;
+    
+        }
+      a{
+          text-decoration: none;
+          color:black;
+          text-transform: uppercase;
+        
+      }
+      mark{
+          background-color: $light-pink;
+      }
+    }
+}
+
+.services{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0px 10px;
+    position: relative;
+    bottom: 30px;
+     
+
+    
+
+    .graphics{
+        background: $yellow url(Resources/photos/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height:40vw;
+        position: relative;
+        
+            
+           
+        }
+
+        h3{
+            align-content: center;
+            text-align:center;
+            padding-top: 90px;
+            position:relative;
+        
+        }
+
+        p{
+            
+            align-content: center;
+            position: absolute;
+                bottom: 30px;
+                text-align: center;
+            padding: 40px;
+    
+        }
+
+    }
+   .photography{
+    background: $yellow url(Resources/photos/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:40vw;
+
+       
+    h3{
+        align-content: center;
+        text-align:center;
+        padding-top: 30px;
+        position:relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    p{
+        position:relative;
+        bottom: 0;
+        left: 0;
+        padding: 40px;
+
+    }
+
+}
+}
+
+.clients-container{
+    display: flex;
+    flex-direction: column;
+    background:$white;
+    margin: 0px 10px;
+    padding: 50px;
+    align-items: center;
+
+    
+   /*it should be retouched again the text and pic are not evenly aligned */
+
+    .clients-testimonials{
+        height:unset;
+        padding:7rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: min-content auto;
+        background-color: $white;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        p{
+            text-align: center;
+        }
+    }
+
+    h4{
+        color: $light-grey;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        word-spacing: 0.5em;
+    }
+
+    img{
+        border-radius: 50%;
+    }
+}
+
+
+.image-container {
+    display: flex;
+    max-height: 450px;
+    margin: 0px 10px;
+    & img {
+        width:25%;
+        object-fit: cover;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #50bbbd;
+    max-height: 450px;
+    margin: 0px 10px;
+    align-items: center;
+    justify-content: space-around;
+    padding:.5rem 2rem ;
+
+    h5{
+        text-align: center;
+        font-weight: bold;
+        padding:0px;
+        color: #312b25;
+        font-size:2em;
+    }
+    .footer-menu ul{
+        padding:1rem;
+        font-size:1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        list-style: none;
+
+        li{
+            justify-content: space-around;
+            padding: 0px 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #383129;
+
+        }
+    }
+
+    .social-media ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        list-style: none;
+        padding: 10px;
+        li{
+            justify-content: space-around;
+            padding: 0px 20px  20px  20px;
+        }
+        a{
+            text-decoration: none;
+
+        }
+    }
+}
